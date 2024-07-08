@@ -1,0 +1,11 @@
+A rotor-bearing testbed (Figure 1) was built to analyze the health condition of the shaft with unbalance defects.The rotating speed of the test-bed is 20 Hz, and two screws were added on the disk of the shaft to induce unbalance defects as shown on right hand side of Figure 1. An accelerometer was mounted on the bearing block and to measure the bearing's vibrations. The vibration data were collected under balanced and unbalanced conditions at a rate of 2560 Hz
+![image](https://github.com/saidineshgelam/Bearing-Fault-dectection-by-Ml-algorithms/assets/144295692/000559de-4175-4e05-b8e4-5d9511336c02)
+he resultant data was split into training and testing sets for the machine learning model being developed as a part of this work. Forty tests were allocated for the training set and thirty for the testing set. The training set was composed of 50% balanced and faulty bearing tests while the proportion of balanced to unbalanced tests in the testing set was unknown.
+The solution process begins with loading the vibration data from the healthy, faulty, and testing datasets. Time domain analysis is conducted by plotting both healthy and faulty data sets across the data collection period, but the difference in magnitude is hard to discern and actually looks worse for the healthy data set (Figure 2). The data is transformed using the fast fourier transform as shown in Figure 3, where the peak amplitudes are visible. The amplitude of the signal is scaled down by ½ the number of points in each signal and results are only shown up to 60 Hz. The difference in amplitude between the healthy and faulty samples is now clear. The same data analysis process is applied to the test data.
+![image](https://github.com/saidineshgelam/Bearing-Fault-dectection-by-Ml-algorithms/assets/144295692/b81450cc-1119-4eba-bf98-ed47040f5e59)
+
+
+The workflow of the entire process including the data analysis, feature extraction, and model development can be seen in Figure 5.
+![image](https://github.com/saidineshgelam/Bearing-Fault-dectection-by-Ml-algorithms/assets/144295692/a158eee3-3dd0-4d17-ba5a-956a115ff55c)
+
+![image](https://github.com/saidineshgelam/Bearing-Fault-dectection-by-Ml-algorithms/assets/144295692/46f896bb-80dc-4837-a84e-a02808e39d9d)
